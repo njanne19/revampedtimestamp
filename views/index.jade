@@ -1,5 +1,11 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+ h1 Janne's Timestamp Microservice
+ p This RESTful API is used to provide JSON data <br/> to the user on the call of a GET request
+ p Example Usage
+ code localhost:3000/August 14, 2016
+ br
+ code localhost:3000/1471150800
+ p Expected Output is in a JSON format
+ code {"unix": 1471150800, "natural": August 14, 2016 }
